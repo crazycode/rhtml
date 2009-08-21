@@ -47,7 +47,7 @@
   html-mode "RHTML"
   "Embedded Ruby Mode (RHTML)"
   (interactive)
-  (abbrev-mode)
+  (abbrev-mode 1)
   ;; disable if you don't want it...
   (rhtml-activate-fontification))
 
