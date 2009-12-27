@@ -108,19 +108,19 @@ colorization."
 
 (defface erb-face
   '((((class color) (min-colors 88) (background dark))
-     :background "#383838")
+     :background "black")
     (((class color) (min-colors 88) (background light))
      ;; :background "azure")
      :background "snow2")
     (((class color) (min-colors 16) (background dark))
-     :background "blue3")
+     :background "black")
     (((class color) (min-colors 16) (background light))
      :background "azure")
     (((class color) (min-colors 8))
      :background "blue")
     (((type tty) (class mono))
      :inverse-video t)
-    (t :background "gray"))
+    )
   "Default inherited face for ERB tag body"
   :group 'rhtml-faces)
 
@@ -145,7 +145,7 @@ colorization."
   :group 'rhtml-faces)
 
 (defface erb-out-delim-face
-  `((((background dark)) :foreground "#aaffff" :background "#383838")
+  `((((background dark)) :foreground "#aaffff" :background "black")
     (t (:inherit erb-delim-face :weight bold :foreground "darkred")))
   "Basic face for Ruby embedded into HTML"
   :group 'rhtml-faces)
